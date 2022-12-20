@@ -4,11 +4,11 @@ export default function Guess({ guess }: { guess: GuessDto }): JSX.Element {
   function getBackgroundColor(feedback: GuessItemFeedback): string {
     switch (feedback) {
       case GuessItemFeedback.NotCorrect:
-        return 'bg-red-200';
+        return 'bg-gray-700';
       case GuessItemFeedback.OtherLocation:
-        return 'bg-gray-200';
+        return 'bg-yellow-300';
       case GuessItemFeedback.Correct:
-        return 'bg-green-200';
+        return 'bg-emerald-500';
     }
   }
 

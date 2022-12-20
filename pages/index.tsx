@@ -50,9 +50,9 @@ export default function Home(): JSX.Element {
       </Head>
       <main className='center'>
         <div className='container-sm flex flex-col items-center'>
-          <h1 className='text-3xl font-bold underline'>Wordle Assistant</h1>
+          <h1 className='text-3xl font-bold underline m-3'>Wordle Assistant</h1>
           <Form />
-          <h2 className='text-xl font-bold underline'>Guesses</h2>
+          <h2 className='text-xl font-bold underline mt-3'>Guesses</h2>
           {guesses().map(function (guess, i) {
             return guess;
           })}

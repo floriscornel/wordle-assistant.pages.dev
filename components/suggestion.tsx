@@ -34,20 +34,22 @@ export default function Suggestion({
   };
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col items-center mt-2 '>
       <h2 className='text-xl font-bold underline'>Suggestions</h2>
-      {results.map((word, idx) => {
-        return (
-          <button
-            type='button'
-            key={idx}
-            className='border p-2 m-1 text-sm rounded-lg'
-            onClick={click}
-          >
-            {word}
-          </button>
-        );
-      })}
+      <div className='grid grid-cols-4 gap-2'>
+        {results.map((word, idx) => {
+          return (
+            <button
+              type='button'
+              key={idx}
+              className='border p-2 m-1 text-sm rounded-lg bg-gray-700'
+              onClick={click}
+            >
+              {word}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }

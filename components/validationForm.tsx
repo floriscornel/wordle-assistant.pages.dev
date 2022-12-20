@@ -27,11 +27,11 @@ export default function ValidationForm({
   function getBackgroundColor(feedback: GuessItemFeedback): string {
     switch (feedback) {
       case GuessItemFeedback.NotCorrect:
-        return 'bg-red-200';
+        return 'bg-gray-700';
       case GuessItemFeedback.OtherLocation:
-        return 'bg-gray-200';
+        return 'bg-yellow-400';
       case GuessItemFeedback.Correct:
-        return 'bg-green-200';
+        return 'bg-emerald-600';
     }
   }
 
@@ -60,7 +60,7 @@ export default function ValidationForm({
           type='button'
           className={`${getBackgroundColor(
             guess.feedback,
-          )} border p-2 m-1 border-gray-300 text-gray-900 text-sm rounded-lg`}
+          )} text-white border p-2 m-1 border-gray-300 text-gray-900 text-sm rounded-lg`}
           onClick={handleClick}
         >
           {guess.letter}
@@ -79,7 +79,7 @@ export default function ValidationForm({
         <input
           type='submit'
           value='Submit'
-          className='border p-2 border-gray-300 text-gray-900 text-sm rounded-lg'
+          className='border p-2 ml-2 border-gray-300 bg-gray-500 text-sm rounded-lg'
         />
       </form>
     </>
