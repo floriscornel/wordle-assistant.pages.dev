@@ -25,14 +25,14 @@ export default function GuessForm({ onSubmit }: { onSubmit: (guess: Word) => voi
           pattern='[a-zA-Z]{5}'
           spellCheck={false}
           autoCorrect='off'
-          className='border p-2 border-gray-300 bg-gray-600 text-sm rounded-lg mr-2 w-20'
+          className='border p-2 border-gray-300 bg-gray-600 text-sm rounded-lg mr-2 w-20 text-white'
           value={guess}
           onChange={upperCaseInput}
         />
         <input
           type='submit'
           value='Guess'
-          className='border p-2 ml-2 border-gray-300 bg-gray-500 text-sm rounded-lg'
+          className='border p-2 ml-2 border-gray-300 bg-gray-500 text-sm rounded-lg text-white'
         />
       </form>
     </>

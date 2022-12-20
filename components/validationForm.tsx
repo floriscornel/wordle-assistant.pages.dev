@@ -60,7 +60,7 @@ export default function ValidationForm({
           type='button'
           className={`${getBackgroundColor(
             guess.feedback,
-          )} text-white border p-4 m-1 border-gray-300 text-gray-900 text-sm rounded-lg`}
+          )} text-white border p-4 m-1 border-gray-300 text-white text-sm rounded-lg`}
           onClick={handleClick}
         >
           {guess.letter}
@@ -79,7 +79,7 @@ export default function ValidationForm({
         <input
           type='submit'
           value='Submit'
-          className='border p-2 ml-2 border-gray-300 bg-gray-500 text-sm rounded-lg'
+          className='border p-2 ml-2 border-gray-300 bg-gray-500 text-sm rounded-lg text-white'
         />
       </form>
     </>

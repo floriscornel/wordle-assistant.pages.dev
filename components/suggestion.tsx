@@ -42,7 +42,7 @@ export default function Suggestion({
             <button
               type='button'
               key={idx}
-              className='border p-2 m-1 text-sm rounded-lg bg-gray-700'
+              className='border p-2 m-1 text-sm rounded-lg bg-gray-700 text-white'
               onClick={click}
             >
               {word}

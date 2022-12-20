@@ -20,7 +20,7 @@ export default function Guess({ guess }: { guess: GuessDto }): JSX.Element {
             key={idx}
             className={`${getBackgroundColor(
               guess.feedback,
-            )} border p-2 m-1 border-gray-300 text-sm rounded-lg`}
+            )} border p-2 m-1 border-gray-300 text-white text-sm rounded-lg`}
           >
             {guess.letter}
           </div>
