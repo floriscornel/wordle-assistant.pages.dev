@@ -60,7 +60,7 @@ export default function ValidationForm({
           type='button'
           className={`${getBackgroundColor(
             guess.feedback,
-          )} text-white border p-4 m-1 border-gray-300 text-white text-sm rounded-lg`}
+          )} text-white border p-4 m-1 border-gray-300 text-sm rounded-lg`}
           onClick={handleClick}
         >
           {guess.letter}
